@@ -9,8 +9,8 @@ from datetime import datetime, timedelta
 def spotify_email():
 ### Pull from Postgress Database ############################################################
     conn = ps.connect(dbname='Spotify',
-                     user = 'postgres',
-                     password = '#Butterfly7',
+                     user = '......',
+                     password = '......',
                      host = 'localhost',
                      port = '5432')
     cur = conn.cursor()
@@ -63,9 +63,9 @@ def spotify_email():
 ### SENDING EMAIL #############################################################################
 
     port = 587 
-    password = "Acecharm102"
-    sender_email = "mbelanger413@gmail.com"
-    receiver_email = "mbelanger413@gmail.com"
+    password = "......"
+    sender_email = "......"
+    receiver_email = "......"
 
     message = MIMEMultipart("alternative")
     message["Subject"] = f"Spotify - Weekly Roundup - {today}"
