@@ -8,9 +8,9 @@ import psycopg2 as ps
 def spotify_etl():
 ### Pull from Spotify API/ create dataframes #########################################################
 
-    CLIENT_ID = "b6ac0a0e681b40ee925cd0c2ebc22143"
-    CLIENT_SECRET = "0f82aedc79584039a65cc7594b977509"
-    REDIRECT_URI = 'http://127.0.0.1:9090'             
+    CLIENT_ID = "......"
+    CLIENT_SECRET = "......"
+    REDIRECT_URI = '......'             
     SCOPE = "user-read-recently-played" 
     
     sp = spotipy.Spotify(auth_manager = SpotifyOAuth(client_id = CLIENT_ID,
@@ -91,8 +91,8 @@ def spotify_etl():
 ### Connect to Postrgres and Load Data ###############################################################
 
     conn = ps.connect(dbname='Spotify',
-                     user = 'postgres',
-                     password = '#Butterfly7',
+                     user = '......',
+                     password = '......',
                      host = 'localhost',
                      port = '5432')
     cur = conn.cursor()
